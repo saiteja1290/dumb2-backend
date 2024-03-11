@@ -15,9 +15,10 @@ app.use(express.json());
 // app.use(cors())
 
 const allowedOrigins = [
+    "https://dumb2-frontend.vercel.app",
     "https://dumbproject-api.vercel.app",
     "https://teja-frontend.vercel.app",
-    "https://teja-coder.vercel.app/", // Add your additional allowed origins here
+    "https://teja-coder.vercel.app", // Add your additional allowed origins here
     "http://localhost:5173", // Add other origins as needed
 ];
 
