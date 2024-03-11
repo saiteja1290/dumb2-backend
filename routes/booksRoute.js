@@ -17,9 +17,7 @@ router.post("/", async (req, res) => {
         const newBook = {
             username: req.body.username,
             branch: req.body.branch,
-            overall_rank: req.body.overall_rank,
-            branch_rank: req.body.branch_rank,
-            rating: req.body.rating,
+            rank: req.body.rank
         };
         const book = await Book.create(newBook);
         return res.status(201).json(book);
