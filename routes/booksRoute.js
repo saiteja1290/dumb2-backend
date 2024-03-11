@@ -8,9 +8,7 @@ router.post("/", async (req, res) => {
         if (
             !req.body.username ||
             !req.body.branch ||
-            !req.body.overall_rank ||
-            !req.body.branch_rank ||
-            !req.body.rating
+            !req.body.rank
         ) {
             return res.status(400).json({
                 message: "Send all required fields",
