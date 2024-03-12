@@ -4,6 +4,7 @@ const bookSchema = mongoose.Schema(
     {
         username: { type: String, required: true },
         branch: { type: String, required: true },
+        contest: { type: Number, required: true },
         rank: { type: Number, required: true }
     },
     {

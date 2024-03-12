@@ -8,7 +8,8 @@ router.post("/", async (req, res) => {
         if (
             !req.body.username ||
             !req.body.branch ||
-            !req.body.rank
+            !req.body.rank ||
+            !req.body.contest
         ) {
             return res.status(400).json({
                 message: "Send all required fields",
@@ -17,7 +18,8 @@ router.post("/", async (req, res) => {
         const newBook = {
             username: req.body.username,
             branch: req.body.branch,
-            rank: req.body.rank
+            rank: req.body.rank,
+            contest: req.body.contest
         };
         const book = await Book.create(newBook);
         return res.status(201).json(book);
