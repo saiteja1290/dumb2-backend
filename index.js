@@ -32,7 +32,7 @@ app.use(
 );
 app.get("/", (req, res) => {
     console.log(req);
-    return res.status(200).send("Welcome to MERN stack Project");
+    return res.status(200).send("Bitch Please");
 });
 
 app.use("/books", booksRoute);
